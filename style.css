@@ -92,7 +92,14 @@ body{
 	opacity: 1;
 }
 
-.menu {    
+#container{
+	font-size: 22px;
+    color: #b3a493;
+	margin: 0 auto;
+	position:relative;
+}
+
+.menu{    
     width: 960px;
     background-color: #000;
     opacity: 0.6;
@@ -104,13 +111,13 @@ body{
 	border-bottom-left-radius: 10px;
 }
 
-.menu li {
+.menu li{
     display: inline-block;
 }
 
-.menu a {
+.menu a{
     color: #b3a493;
-    font-size: 18px;
+    font-size: 22px;
     margin: 0 12px;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -132,7 +139,28 @@ body{
     padding: 15px;
     width: 960px;
     height: auto;
-    background-color: #fff;
+    background-color: #000;
+    color: #fff;
     opacity: 0.6;
     font-size: 24px;
+    border-radius: 10px;
+}
+
+.news h1 {
+    border-bottom: 2px dotted gray;
+}
+
+/*Prices*/
+
+.price h1 {
+    border-bottom: 2px dotted gray;
+}
+
+.price {
+    margin-top: 80px;
+    border-radius: 10px;
+}
+
+table {
+    width: 90%;
 }
