@@ -164,3 +164,82 @@ body{
 table {
     width: 90%;
 }
+
+/*Gallery*/
+
+.flex-cont-gallery{
+
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+     margin-top: 1%;  
+    z-index: 10;
+}
+
+.flex-cont-gallery1{
+
+    display: flex;
+    align-content: flex-end;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+
+.flex-cont-gallery img, .flex-cont-gallery1 img{
+    width: 300px;
+    height: 200px;
+    border: 10px solid black;
+}
+
+.flex-cont-gallery img:hover , .flex-cont-gallery1 img:hover{
+    width: 500px;
+    height: 350px;
+    border: 20px solid white;
+    transition-duration: 1s;
+    z-index: 15;
+    transform: rotate(360deg);
+}
+
+SECTION1 h1 span.galeng{
+    color: black;
+}
+
+SECTION1 h1 span.galpl{
+    animation: pulse 2s infinite;
+}
+
+SECTION1 h1 span.galeng{
+    animation: none;
+}
+
+SECTION1 h1{
+    color:brown;
+    display: block;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    background-color: black;
+    font-family: monospace;
+    transition-duration: 2s;
+}
+
+SECTION1 h1:hover > span{
+    color: black;
+    transition-duration: 2s;
+    animation: none;
+}
+
+SECTION1 h1:hover > span.galeng{
+    color: brown;
+    transition-duration: 2s;
+      box-shadow: 0 0 0 rgba(204,169,44, 0.4);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    color: black;
+  }
+  100% {
+    color: darkred;
+  }
+}
