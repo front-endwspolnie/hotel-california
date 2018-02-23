@@ -1,7 +1,3 @@
-/*function isNumber(valueToCheck)
-{
-    return !isNaN(valueToCheck);
-}*/
 
 window.onload = function(){
      var name = document.getElementById("contact").name;
