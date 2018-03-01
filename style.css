@@ -24,6 +24,15 @@ body{
     z-index: -5;
 }
 
+.container {
+     position: absolute;
+     z-index: 2;
+     width: 100%;
+     height: 100%;
+     overflow: auto;
+     opacity: 1;
+}
+
 /*Header*/
 
 .site-title{
@@ -141,9 +150,10 @@ body{
     height: auto;
     background-color: #000;
     color: #fff;
-    opacity: 0.6;
+    opacity: 0.9;
     font-size: 24px;
     border-radius: 10px;
+    box-shadow: 0px 0px 20px 6px red;
 }
 
 .news h1 {
@@ -167,36 +177,17 @@ table {
 
 /*Gallery*/
 
-.flex-cont-gallery{
+.slider{
 
     display: flex;
-    justify-content: space-between;
-    align-content: flex-start;
+    align-content:space-around;
     margin-top: 1%;  
     z-index: 10;
 }
 
-.flex-cont-gallery1{
-
-    display: flex;
-    align-content: flex-end;
-    justify-content: space-between;
-    margin-top: 3%;
-}
-
-.flex-cont-gallery img, .flex-cont-gallery1 img{
-    width: 150px;
-    height: 100px;
-    border: 10px solid black;
-}
-
-.flex-cont-gallery img:hover , .flex-cont-gallery1 img:hover{
-    width: 200px;
-    height: 150px;
-    border: 20px solid white;
-    transition-duration: 1s;
-    z-index: 15;
-    transform: rotate(360deg);
+#slider img{
+    width: 100%;
+    height: 500px;
 }
 
 SECTION1 h1 span.galeng{
@@ -222,17 +213,16 @@ SECTION1 h1{
     transition-duration: 2s;
 }
 
-SECTION1 h1:hover > span{
-    color: black;
-    transition-duration: 2s;
-    animation: none;
+.flex-cont-gallery{
+    display: flex;
+    justify-content: space-between;
 }
 
-SECTION1 h1:hover > span.galeng{
-    color: brown;
-    transition-duration: 2s;
-      box-shadow: 0 0 0 rgba(204,169,44, 0.4);
-    animation: pulse 2s infinite;
+.flex-cont-gallery img{
+
+    width: 70px;
+    height: 50px;
+    cursor: pointer;
 }
 
 @keyframes pulse {
@@ -242,4 +232,111 @@ SECTION1 h1:hover > span.galeng{
   100% {
     color: darkred;
   }
+}
+
+/*Formularz kontaktowy*/
+
+#map {
+     width: "600";
+     height: "450";
+     display: flex;
+     text-align: center;
+     margin-top: 75px;
+}
+
+#contact {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     background-color: #000;
+     margin-top: 30px;
+}
+
+#contact label {
+     font-size: 24px;
+     margin-bottom: 15px;
+     margin-top: 15px;
+}
+
+#contact input {
+     width: 35%;
+     height: 40px;
+     font-size: 18px;
+}
+
+#contact textarea {
+     width: 60%;
+     height: 150px;
+     font-size: 18px;
+}
+
+.submit {
+     width: 15%;
+     height: 60px;
+     margin: 30px;
+     background-color: #000;
+     color: #fff;
+     opacity: 0.9;
+     border-radius: 1px;
+     box-shadow: 0px 0px 20px 6px red;
+}
+
+.address {
+     font-size: 18px;
+     margin-left: 75px;
+}
+
+.address h4 {
+     margin-bottom: 10px;
+     margin-top: 15px;
+}
+
+/*Booking*/
+
+#booking {
+     margin: auto;
+     padding: auto;
+     width: 100%;
+     color: #fff;
+     font-size: 24px;
+     background-color: #000;
+}
+
+#booking label {
+     display: inline-block;
+     width: 25px;
+     float: left;
+     width: 20em;
+     vertical-align: top;
+     text-align: right;
+     margin-right:15px;
+     font-size: 24px;
+}
+
+#booking input{
+     font-size: 24px;
+}
+
+.subform {
+     display: inline-block;
+     width: 200px;
+     vertical-align: top;
+     margin-left: 420px;
+     padding: 5px 15px;
+     font-size:15px;
+     margin-bottom: 15px;
+     background-color: #000;
+     color: #fff;
+     opacity: 0.9;
+     border-radius: 1px;
+     box-shadow: 0px 0px 20px 6px red;
+}
+
+.text{
+     text-align: center;
+     margin-top: 15px;
+}
+
+.form{
+     margin: 10px;
 }

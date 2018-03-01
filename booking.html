@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel California</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <script src = "js/contact.js"></script>
+    <script  src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script>
+$( function() {
+$( ".datepicker" ).datepicker({changeMonth : true,
+changeYear : true,
+yearRange : '-120:+0',
+maxDate : 0,
+dateFormat : 'dd-m-yy'});
+$( ".datepicker2" ).datepicker2({changeMonth : true,
+changeYear : true,
+yearRange : '-120:+0',
+maxDate : 0,
+dateFormat : 'dd-m-yy'});
+} );
+     </script>
+</head>
+<body>
+     <div class="container">
+          <header>
+               <div class="logo">
+                    <div class="top">
+                         <img src="img/logo.svg" class="site-title">
+                         <nav id="lang-menu">
+                              <ul>
+                                   <li><a class="pl active" href="#">pl</a></li>
+                                   <li><a class="en" href="#">en</a></li>
+                                   <li><a class="de" href="#">de</a></li>
+                              </ul>
+                         </nav>
+                    </div>
+               </div>
+               <div class="top-menu">
+                    <nav class="menu">
+                         <ul>
+                              <li><a href="index.html">Strona główna</a></li>
+                              <li><a href="galeria.html">Galeria</a></li>
+                              <li><a href="prices.html">Cennik</a></li>
+                              <li class="menuactive"><a class="menuactive" href="booking.html">Rezerwacja</a></li>
+                              <li><a href="contact.html">Kontakt</a></li>
+                         </ul>
+                    </nav>
+               </div>
+          </header>
+          <main>
+               <section class="news">
+               <h1>Rezerwacja</h1>
+               <form id="booking">
+                    <div class="form">
+                    <label style="font-weight:bold;" for="Imie i nazwisko">Imie i nazwisko*</label>
+                    <input type="text" name="name" value="" size="25" maxlength="150" required></div>
+
+                    <div class="form">
+                    <label for="Firma">Firma</label>
+                    <input type="text" name="" value="" size="25" maxlength="80"></div>
+
+                    <div class="form">
+                    <label for="Adres">Adres</label>
+                    <input type="text" name="" value="" size="25" maxlength="80"></div>
+
+                    <div class="form">
+                    <label for="Kod pocztowy">Kod pocztowy</label>
+                    <input type="text" name="" value="" size="6" maxlength="6"></div>
+
+                    <div class="form">
+                    <label for="Miejscowość">Miejscowość</label>
+                    <input type="text" name="" value="" size="25" maxlength="80"></div>
+
+                    <div class="form">
+                    <label for="Kraj">Kraj</label>
+                    <input type="text" name="" value="" size="25" maxlength="80"></div>
+
+                    <div class="form">
+                    <label for="Telefon">Telefon</label>
+                    <input type="text" name="" value="" size="25" maxlength="80"></div>
+
+                    <div class="form">
+                    <label style="font-weight:bold;" for="email">email*</label>
+                    <input type="email" name="name" value="" size="25" maxlength="80" required></div>
+
+                    <div class="form">
+                    <label style="font-weight:bold;" for="Data przyjazdu">Data przyjazdu*</label>
+                    <input  class="datepicker" type="text" name="name" value="" size="25" maxlength="80"  required>
+                    <!-- <img  src="img/icons8.png"/> -->
+               </div>
+
+
+                    <div class="form">
+                    <label style="font-weight:bold;" for="Data wyjazdu">Data wyjazdu*</label>
+                    <input class="datepicker" type="text" name="name" value="" size="25" maxlength="80" required >
+                    <!-- <img src="img/icons8.png" /> --></div>
+
+                    <div class="form">
+                    <label for="pokój 1">pokój 1-osobowy</label>
+                    <select class="" name="">
+                            <option value="" selected="selected">-</option>
+                            <option value="1">1</option>
+                       </select></div>
+
+                    <div class="form">
+                    <label for="pokój 2">pokój 2-osobowy</label>
+                    <select class="" name="">
+                          <option value="" selected="selected">-</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                     </select></div>
+
+                     <div class="form">
+                    <label for="studio 2">studio 2-osobowe</label>
+                    <select class="" name="">
+                         <option value="" selected="selected">-</option>
+                         <option value="1">1</option>
+                         <option value="2">2</option>
+                    </select></div>
+
+                    <div class="form">
+                    <label for="pokój 3">Pokój 3-osobowy</label>
+                    <select class="" name="">
+                        <option value="" selected="selected">-</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                   </select></div>
+
+                    <div class="form">
+                    <label for="apartament">Apartament</label>
+                    <select class="" name="">
+                       <option value="" selected="selected">-</option>
+                       <option value="1">1</option>
+                       <option value="2">2</option>
+                  </select></div>
+
+                  <div class="form">
+                    <label for="uwagi">Uwagi</label>
+                    <textarea name="name" rows="5" cols="80"></textarea>
+                    </div>
+                    <input class="subform" type="submit" name="submit" value="Wyślij">
+               </form>
+               <div style="clearfix"></div>
+              </section>
+
+          </main>
+     </div>
+     <div class="background"></div>
+
+
+</body>
+
+</html>
