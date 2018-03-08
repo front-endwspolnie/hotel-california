@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <meta charset="UTF-8">
+     <title>Hotel California</title>
+     <link rel="stylesheet" type="text/css" href="style.css">
+     <link href="https://fonts.googleapis.com/css?family=Nosifer&amp;subset=latin-ext" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed" rel="stylesheet">
+     <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+     <script type="text/javascript">
+          $('document').ready(function() {
+               $('main').fadeIn(1500);
+          })
+          var numer = Math.floor(Math.random() * 12) + 1;
+          var timer1 = 0;
+          var timer2 = 0;
+
+          function schowaj() {
+               $("#slider").fadeOut(500);
+          }
+          function ustawSlajd(numerSlajdu) {
+               clearTimeout(timer1);
+               clearTimeout(timer2);
+               numer = numerSlajdu - 1;
+
+               schowaj();
+               setTimeout("zmienSlajd()", 500)
+          }
+          function zmienSlajd() {
+               numer++;
+               if (numer > 12) numer = 1;
+
+               var plik = "<img src=\"img/gallery/slajd" + numer + ".jpg\"/>";
+
+               document.getElementById("slider").innerHTML = plik;
+               $("#slider").fadeIn(500);
+
+               timer1 = setTimeout("zmienSlajd()", 5000);
+               timer2 = setTimeout("schowaj()", 4500);
+          }
+     </script>
+</head>
+<body onload="zmienSlajd()">
+     <div class="background"></div>
+     <div class="container">
+          <header>
+               <div class="logo">
+                    <div class="top">
+                         <h1 class="heading">Hotel California Zaprasza</h1>
+                         <img src="img/logo.svg" class="site-title">
+                         <nav id="lang-menu">
+                              <ul>
+                                   <li><a class="pl active" href="#">pl</a></li>
+                                   <li><a class="en" href="#">en</a></li>
+                                   <li><a class="de" href="#">de</a></li>
+                              </ul>
+                         </nav>
+                    </div>
+               </div>
+               <div class="top-menu">
+                    <nav class="menu">
+                         <ul>
+                              <li><a href="index.html">Strona główna</a></li>
+                              <li class="menuactive"><a href="galeria.html" class="menuactive">Galeria</a></li>
+                              <li><a href="prices.html">Cennik</a></li>
+                              <li><a href="booking.html">Rezerwacja</a></li>
+                              <li><a href="contact.html">Kontakt</a></li>
+                         </ul>
+                    </nav>
+               </div>
+          </header>
+          <main id="main">
+               <section class="news">
+                    <h1>Galeria</h1>
+                    <section1>
+                         <div class="flex-cont-gallery">
+                              <span onclick="ustawSlajd(1)"><img src="img/gallery/slajd1.jpg"></span>
+                              <span onclick="ustawSlajd(2)"><img src="img/gallery/slajd2.jpg"></span>
+                              <span onclick="ustawSlajd(3)"><img src="img/gallery/slajd3.jpg"></span>
+                              <span onclick="ustawSlajd(4)"><img src="img/gallery/slajd4.jpg"></span>
+                              <span onclick="ustawSlajd(5)"><img src="img/gallery/slajd5.jpg"></span>
+                              <span onclick="ustawSlajd(6)"><img src="img/gallery/slajd6.jpg"></span>
+                              <span onclick="ustawSlajd(7)"><img src="img/gallery/slajd7.jpg"></span>
+                              <span onclick="ustawSlajd(8)"><img src="img/gallery/slajd8.jpg"></span>
+                              <span onclick="ustawSlajd(9)"><img src="img/gallery/slajd9.jpg"></span>
+                              <span onclick="ustawSlajd(10)"><img src="img/gallery/slajd10.jpg"></span>
+                              <span onclick="ustawSlajd(11)"><img src="img/gallery/slajd11.jpg"></span>
+                              <span onclick="ustawSlajd(12)"><img src="img/gallery/slajd12.jpg"></span>
+                         </div>
+                         <div id="slider">
+                         </div>
+                    </section1>
+               </section>
+          </main>
+     </div>
+     <audio src="music/1.mp3" autoplay></audio>
+</body>
+</html>

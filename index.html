@@ -1,55 +1,63 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8">
     <title>Hotel California</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nosifer&amp;subset=latin-ext" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed" rel="stylesheet">
+     <script  src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+     <script type="text/javascript">
+     $('document').ready(function(){
+          $('main').fadeIn(1500);
+     })
+     </script>
 </head>
 <body>
+     <div class="container">
 
+              <header>
+                  <div class="logo">
+                      <div class="top">
+                           <h1 class="heading">Hotel California Zaprasza</h1>
+                          <img src="img/logo.svg" class="site-title">
+                          <nav id="lang-menu">
+                              <ul>
+                                  <li><a class="pl active" href="#">pl</a></li>
+                                  <li><a class="en" href="#">en</a></li>
+                                  <li><a class="de" href="#">de</a></li>
+                              </ul>
+                          </nav>
+                      </div>
+                  </div>
+                  <div class="top-menu">
+                      <nav class="menu">
+                          <ul>
+                              <li class="menuactive"><a class="menuactive" href="index.html">Strona główna</a></li>
+                              <li><a href="galeria.html">Galeria</a></li>
+                              <li><a href="prices.html">Cennik</a></li>
+                              <li><a href="booking.html">Rezerwacja</a></li>
+                              <li><a href="contact.html">Kontakt</a></li>
+                          </ul>
+                      </nav>
+                  </div>
+              </header>
+              <main id="main">
+                  <article class="news">
+                      <h1>Hotel California</h1>
+                      <p><strong>Hotel California</strong> to kameralne miejsce z 10 pokojami dla 20 osób, wyposażonymi w komfortowe łazienki, funkcjonalne meble i TV naziemną. Do Państwa dyspozycji jest barek i klimatyzowana salka konferencyjna , także darmowy dostęp do bezprzewodowego Internetu i monitorowany parking.</p>
+
+                      <p>Dogodne położenie na trasie Los Angeles-Las Vegas, niedaleko od Hollywood (ok. 9 km), Portu Lotniczego LAX (ok. 19 km). 10 minut jazdy samochodem dzieli Państwa od nowoczesnego kompleksu z ekskluzywnymi butikami i bogatym pasażem handlowym.</p>
+
+                      <p>Możliwość organizowania spotkań integracyjnych, konferencji do 25 osób oraz pojedynczych noclegów dla podróżnych.
+                      <strong>Hotel California</strong> to sprawdzone miejsce na mapie Twojej podróży !</p>
+
+                      <p>ZAPRASZAMY SERDECZNIE !</p>
+                  </article>
+              </main>
+              <audio src="music/1.mp3" autoplay ></audio>
+     </div>
 <div class="background"></div>
-    <header>
-        <div class="logo">
-            <div class="top">
-                <img src="img/logo.svg" class="site-title">
-                <nav id="lang-menu">
-                    <ul>
-                        <li><a class="pl active" href="#">pl</a></li>
-                        <li><a class="en" href="#">en</a></li>
-                        <li><a class="de" href="#">de</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-        <div class="top-menu">
-            <nav class="menu">
-                <ul>
-                    <li class="menuactive"><a class="menuactive" href="#">Strona główna</a></li>
-                    <li><a href="#">Galeria</a></li>
-                    <li><a href="#">Cennik</a></li>
-                    <li><a href="#">Rezerwacja</a></li>
-                    <li><a href="contact.html">Kontakt</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-        <article class="news">
-            <p>Hotel California to kameralne miejsce z 10 pokojami dla 20 osób, wyposażonymi w komfortowe łazienki, funkcjonalne meble i TV naziemną. Do Państwa dyspozycji jest barek i klimatyzowana salka konferencyjna , także darmowy dostęp do bezprzewodowego Internetu i monitorowany parking.</p>
-
-            <p>Dogodne położenie na trasie Los Angeles-Las Vegas, niedaleko od Hollywood (ok. 9 km), Portu Lotniczego LAX (ok. 19 km). 10 minut jazdy samochodem dzieli Państwa od nowoczesnego kompleksu z ekskluzywnymi butikami i bogatym pasażem handlowym.</p>
-
-            <p>Możliwość organizowania spotkań integracyjnych, konferencji do 25 osób oraz pojedynczych noclegów dla podróżnych.
-            Pensjonat Komorniki to sprawdzone miejsce na mapie Twojej podróży !</p>
-
-            <p>ZAPRASZAMY SERDECZNIE !</p>
-        </article>
-
-    </main>
-
-    <audio src="music/1.mp3" autoplay />
-
 </body>
 </html>
